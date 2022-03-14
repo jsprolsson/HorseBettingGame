@@ -1,0 +1,17 @@
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\bin\Debug\net6.0\HorseRace.exe
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\bin\Debug\net6.0\HorseRace.deps.json
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\bin\Debug\net6.0\HorseRace.runtimeconfig.json
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\bin\Debug\net6.0\HorseRace.dll
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\bin\Debug\net6.0\HorseRace.pdb
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.csproj.AssemblyReference.cache
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.AssemblyInfoInputs.cache
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.AssemblyInfo.cs
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.csproj.CoreCompileInputs.cache
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.dll
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\refint\HorseRace.dll
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.pdb
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.genruntimeconfig.cache
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\ref\HorseRace.dll
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\bin\Debug\net6.0\ConsoleTables.dll
+C:\Users\jespe\source\OOP2\HorseRace\HorseRace\obj\Debug\net6.0\HorseRace.csproj.CopyComplete
