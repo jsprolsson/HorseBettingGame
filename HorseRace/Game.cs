@@ -11,8 +11,6 @@ namespace HorseRace
     {
         public static void RunGame()
         {
-            //Create new horses so the previous winning-property doesn't go into the new race.
-            AppManager.Horses = AppManager.CreateHorses();
             AppManager.RandomizeSpeedToHorses();
             AppManager.CalculateHorseSpeed();
             AppManager.CalculateWinningHorse();
@@ -37,6 +35,7 @@ namespace HorseRace
             Console.WriteLine("----------------------------------");
             ShowAllBids();
             AppManager.Bids.Clear();
+            AppManager.ResetHorses();
             
         }
 
@@ -47,7 +46,7 @@ namespace HorseRace
             do
             {
                 Console.Clear();
-                Console.WriteLine("Hello User! Pick from the menu:\n1.Place a bid\n2.See all horses\n3.Show all bids\n4.Start race\n5.Exit tracks");
+                Console.WriteLine("Hello User! Pick from the menu:\n1.Place a bid\n2.See all horses\n3.Show all bids\n4.Start race\n5.Add your horse to the race\n6.Exit tracks");
                 userMenuPick = Convert.ToInt32(Console.ReadLine());
                 switch (userMenuPick)
                 {
@@ -66,22 +65,26 @@ namespace HorseRace
                         RunGame();
                         break;
                     case 5:
+                        Console.Clear();
+                        AppManager.AddHorseToRace();
+                        break;
+                    case 6:
                         break;
                     default:
                         Console.WriteLine("Invalid number!");
                         break;
                 }
 
-            } while (userMenuPick != 5);
+            } while (userMenuPick != 6);
         }
 
         public static void ShowAllHorses()
         {
             Console.Clear();
-            var table = new ConsoleTable("Horse Id", "Name", "Weight", "Height", "Speed");
+            var table = new ConsoleTable("Horse Id", "Name", "Weight", "Height");
             foreach (var h in AppManager.Horses.OrderBy(h => h.HorseId))
             {
-                table.AddRow(h.HorseId, h.Name, h.Weight, h.Height, h.Speed);
+                table.AddRow(h.HorseId, h.Name, h.Weight, h.Height);
             }
             table.Write();
             Console.WriteLine("Press KEY to continue....");

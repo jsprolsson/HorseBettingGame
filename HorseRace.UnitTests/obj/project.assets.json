@@ -6257,11 +6257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jespe\\source\\OOP2\\HorseRace\\HorseRace.UnitTests\\HorseRace.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\jespe\\OneDrive\\Skrivbord\\HorseBettingGame\\HorseRace.UnitTests\\HorseRace.UnitTests.csproj",
       "projectName": "HorseRace.UnitTests",
-      "projectPath": "C:\\Users\\jespe\\source\\OOP2\\HorseRace\\HorseRace.UnitTests\\HorseRace.UnitTests.csproj",
+      "projectPath": "C:\\Users\\jespe\\OneDrive\\Skrivbord\\HorseBettingGame\\HorseRace.UnitTests\\HorseRace.UnitTests.csproj",
       "packagesPath": "C:\\Users\\jespe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jespe\\source\\OOP2\\HorseRace\\HorseRace.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\jespe\\OneDrive\\Skrivbord\\HorseBettingGame\\HorseRace.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jespe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6278,8 +6278,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jespe\\source\\OOP2\\HorseRace\\HorseRace\\HorseRace.csproj": {
-              "projectPath": "C:\\Users\\jespe\\source\\OOP2\\HorseRace\\HorseRace\\HorseRace.csproj"
+            "C:\\Users\\jespe\\OneDrive\\Skrivbord\\HorseBettingGame\\HorseRace\\HorseRace.csproj": {
+              "projectPath": "C:\\Users\\jespe\\OneDrive\\Skrivbord\\HorseBettingGame\\HorseRace\\HorseRace.csproj"
             }
           }
         }
@@ -6326,7 +6326,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -10,6 +10,7 @@ namespace HorseRace
     {
         public static List<Horse> Horses { get; set; } = CreateHorses();
         public static List<Bid> Bids { get; set; } = new List<Bid>();
+
         public static double TrackLengthInKilometer = 4;
 
         public static List<Horse> CreateHorses()
@@ -20,7 +21,7 @@ namespace HorseRace
                 {
                     new Horse
                     {
-                     HorseId = 0,
+                        HorseId = 0,
                         Name = "Malcolm",
                         Weight = 300,
                         Height = 170
@@ -69,7 +70,6 @@ namespace HorseRace
                     }
                 };
             }
-
             return Horses;
         }
 
@@ -88,12 +88,18 @@ namespace HorseRace
             bool horseIdFound = false;
             int horseId;
             Console.Clear();
+            foreach (var h in Horses)
+            {
+                Console.Write($"{h.Name}: {h.HorseId},");
+            }
+            Console.WriteLine();
+            Console.WriteLine("--------------------------------------------------------------");
             Console.WriteLine("What is your name?");
             string? name = Console.ReadLine();
 
             do
             {
-                Console.WriteLine("What horse would you like to bet on?");
+                Console.WriteLine("What horse would you like to bet on? (ENTER HORSE ID....)");
                 horseId = Convert.ToInt32(Console.ReadLine());
 
                 if (!Horses.Any(h => h.HorseId == horseId))
@@ -150,6 +156,42 @@ namespace HorseRace
                     }
                 }
             }
+        }
+
+        public static void AddHorseToRace()
+        {
+            int nextId = Horses.Count;
+            Console.WriteLine("Horse name?");
+            string? name = Console.ReadLine();
+            Console.WriteLine("Height?");
+            int height = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Weight?");
+            int weight = int.Parse(Console.ReadLine());
+            Horse newHorse = new(nextId, name, weight, height);
+            Horses.Add(newHorse);
+        }
+
+        public static void ResetHorses()
+        {
+
+            foreach (var h in Horses)
+            {
+                if (h.IsWinner)
+                {
+                    h.IsWinner = false;
+                }
+                else if (h.SecondPlace)
+                {
+                    h.SecondPlace = false;
+                }
+                else if (h.ThirdPlace)
+                {
+                    h.ThirdPlace = false;
+                }
+            }
+                
+            Horses.OrderBy(h => h.HorseId);
+
         }
 
 
